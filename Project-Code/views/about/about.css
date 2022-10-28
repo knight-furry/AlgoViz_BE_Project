@@ -1,0 +1,33 @@
+.col-md-4{
+    background-color: rgb(20 20 39 / 92%);
+    border-radius: 34px;
+    height: 100%;
+    width: 95%;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 20px;
+    margin-left: 25px;
+    /* margin-top: 68px; */
+}
+.para{
+    text-align: justify;
+    padding: 15px;
+}
+
+body{
+    text-align: center !important;
+    background-color: rgb(186 183 210);
+    width: 80;
+
+}
+p{
+    margin-top: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.abc a{
+    
+    color: white; 
+    /* border: 2px solid white; */
+    padding: 5px;
+}
