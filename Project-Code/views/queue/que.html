@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Visualization</title>
+    <link rel="stylesheet" href="que.css">
+    <style>
+        .container{
+            background-color: thistle;
+            border: 2px solid red;
+            margin-left: 700px;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 5px;
+            width: 25%;
+        }
+        .btn{
+            color: black;
+            background-color: cornflowerblue;
+            border: crimson solid 2px;
+            padding: auto;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: darkcyan;
+        }
+        a:visited{
+            color:blue;
+        }
+    </style>
+</head>
+<body bgcolor="wheat">
+    <div class="nav-bar" id="navigation">
+        <h1 style="margin-right: 16px;">
+            Queue Data Structure Visualizer
+        </h1>
+    </div>
+    <br><br><br>
+        <div class="card-container">
+        <div class="card">
+            <div class="card-head">
+                Random Queue</div>
+            <div id="complexity" class="innerCard">
+                Length: <input type="number" name="length" id="len"><br>
+                Range: &nbsp;<input type="number" name="range" id="ran"><br>
+                <button type="button"  class="btn" onclick="RandomQueue()">CREATE A RANDOM QUEUE</button> 
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-head">
+                Status</div>
+            <div id="complexity" class="innerCard">
+                <!-- <pre style="font-size: 1rem;color:rgb(255, 255, 255);margin-top: 3rem;font-size: 1.1rem;margin-left: 32px;line-height: 30px;">Status -->
+                    <pre id="status"></pre>
+                </pre>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-head">
+                Operations</div>
+            <div id="complexity" class="innerCard">
+                <pre style="font-size: 1rem;color:rgb(255, 255, 255);margin-top: 3rem;font-size: 1.0rem;margin-left: 25px;line-height: 30px;
+">Enqueue(): Adds an element into the Queue<br>Dequeue(): Removes an Element from the Queue<br>front(): Returns first element in Queue<br>rear(): Returns last element in Queue</pre>
+            </div>
+        </div>
+    </div>
+        <label class="writeup"><pre style="width:600px; background-color:#434343;font-size: 1rem;color:rgb(255, 255, 255);margin-top: 3rem;font-size: 1.1rem;margin-left: 25px;line-height: 30px;
+            "> Enter the element to push into queue: <input type="text" name="element" id="text">  </pre></label>
+            <button type="button" id="push" onclick="Push()">ENQUEUE</button>
+            <button id="pop" onclick="Pop()" type="button" >DEQUEUE </button>
+        <div class="writeup"><pre style="margin-left:12px; font-size: 1rem;color:rgb(255, 255, 255);margin-top: 3rem;font-size: 1.1rem;margin-left: 25px;line-height: 30px;
+            ">Elements of the queue are:-</pre>
+            <ul id="pushlist"></ul>
+        </div>
+        <div class="writeup"><pre style="margin-left:12px; font-size: 1rem;color:rgb(255, 255, 255);margin-top: 3rem;font-size: 1.1rem;margin-left: 25px;line-height: 30px;
+            ">Elements popped out of the queue are:-</pre>
+            <ul id="poplist"></ul>
+        <script src="que.js"></script>
+</body>
+</html>
+
+
