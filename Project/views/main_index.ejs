@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Itim&family=Open+Sans&family=Texturina:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css1/index2.css">
+</head>
+
+<body>
+    <header>
+        <nav class="bar">
+            <ul>
+                <span>SiteName.com</span>
+                <li><a href="./account.html" target="_blank">Account</a></li>
+                <li><a href="#">Test Series</li>
+                <li><a href="#">Learning</li>
+                <li><a href="#">About</li>
+                <li><a class="active" href="#Home ">Home</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="heading1">
+                <h1>SiteName.com</h1>
+                <h2>
+                    visualising data structures and algorithms through animation
+
+                </h2>
+            </div>
+        </section>
+
+        <section id="mid-para">
+            <h2>Heading</h2>
+            <p style="font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore, animi iusto ea repudiandae,
+                voluptate mollitia magni dolorem itaque odit asperiores adipisci qui similique omnis aspernatur nisi cum
+                quae ut, fugit deserunt optio perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                impedit eaque eveniet tempora, facilis cumque, pariatur nihil officiis corporis reprehenderit delectus
+                deserunt </p>
+        </section>
+
+
+        <section class="explore">
+
+            <div class="explore">
+                <a style="	text-decoration: none;
+                font-weight: bold;
+                color: rgb(24, 26, 22);" href="./explore.html">Explore</a>
+            </div>
+        </section>
+
+        <section id="quotes">
+
+            <div id="quote_display" style="color: white;">
+
+            </div>
+            <!-- <div style="color: white">i am here</div> -->
+            <div>
+                <button onclick="new_quote()" id="quote_btn">Next Random Tip</button>
+            </div>
+        </section>
+
+
+        <script src="../js/random-tip.js"></script>
+    </header>
+</body>
+
+</html>
